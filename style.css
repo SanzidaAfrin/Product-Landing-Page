@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeee;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+#header{
+    max-width: 1200px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 2rem;
+    overflow: hidden;
+}
+#navbar img{
+    width: 20rem;
+    /* height: 2rem; */
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li{
+    padding: 1rem 2rem;
+}
+#navbar ul li a{
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#container{
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+.massage{
+    text-align: center;
+}
+.massage h1{
+    padding-bottom: 1rem;
+}
+.massage input{
+    padding: .3rem;
+    width: 15rem;
+}
+.btn{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: .5rem;
+    background-color: #f1c40f;
+    border-radius: .5rem;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+}
+.feature i{
+    color: #FF8C00;
+}
+.feature div{
+    padding: 1rem;
+    margin-left: 3rem;
+}
+.feature h2{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+#work{
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+}
+#pricing{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem .2rem;
+}
+.price-box{
+    border: solid #333 1.5px;
+    border-radius: 2px;
+    padding-bottom: 1.5rem;
+    /* padding: 0 3rem; */
+}
+.price-box h3{
+    background-color: #ddd;
+    font-size: 1.05rem;
+    padding: 1rem;
+}
+.price-box h2{
+    padding: 1rem;
+}
+.price-box p{
+    padding: 0 4.9rem 1rem;
+}
+#pone{
+    margin-right: .5rem;
+}
+#pthree{
+    margin-left: .5rem;
+}
+.btn1{
+    text-decoration: none;
+    background-color: #f1c40f;
+    padding: .6rem;
+    border-radius: .5rem;
+    color: #000;
+}
+
+/* footer */
+#main-footer{
+    background-color: #ccc;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#main-footer div a{
+    color: #333;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+/* Smartphone and tab */
+@media (max-width: 800px) {
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: .5rem; */
+    }
+    #navbar ul li{
+        padding: 1rem 1rem;
+    }
+    .feature{
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+    .feature div{
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+
+    }
+    #work{
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+    }
+    #video{
+        width: 400px;
+        height: 340px;
+    }
+
+    #pricing{
+        flex-direction: column;
+    }
+    #pricing .price-box{
+        margin: 1rem;
+    }
+    #pone{
+        margin-right: 0;
+    }
+    #pthree{
+        margin-left: 0;
+    }
+    #main-footer{
+        padding: 1rem .5rem;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
